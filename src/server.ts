@@ -178,6 +178,7 @@ server.registerTool(
         .describe("Array of search queries. Batch ALL questions in one call."),
       source: z
         .string()
+        .max(200)
         .optional()
         .describe("Filter to a specific indexed source (partial match)."),
       limit: z
@@ -269,8 +270,8 @@ server.registerTool(
       "Use for storing documentation, API references, or any content you want to search later.\n" +
       "After indexing, use search() to retrieve specific sections on-demand.",
     inputSchema: z.object({
-      content: z.string().describe("The text content to index"),
-      source: z.string().describe("Label for the indexed content (e.g., 'react-docs', 'api-reference')"),
+      content: z.string().max(10 * 1024 * 1024).describe("The text content to index (max 10MB)"),
+      source: z.string().max(200).describe("Label for the indexed content (e.g., 'react-docs', 'api-reference')"),
     }),
   },
   async ({ content, source }) => {

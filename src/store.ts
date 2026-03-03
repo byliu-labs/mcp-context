@@ -1,8 +1,9 @@
 /**
  * ContentStore — FTS5 BM25-based knowledge base for mcp-context.
  *
- * Adapted from claude-context-mode's store.ts (MIT, Mert Koseoğlu)
- * with added JSON-by-key chunking and stack-trace-aware chunking.
+ * Inspired by mksglu/claude-context-mode (MIT). We referenced its
+ * FTS5 search patterns and built on those ideas with JSON-by-key
+ * chunking, stack-trace-aware chunking, and vocabulary extraction.
  *
  * Chunking priority: JSON → Stack traces → Markdown headings → Plain text
  * Search fallback: Porter stemming → Trigram substring → Levenshtein fuzzy
