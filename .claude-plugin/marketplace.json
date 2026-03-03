@@ -1,0 +1,22 @@
+{
+  "name": "mcp-context",
+  "owner": {
+    "name": "byliu-labs",
+    "email": "byliu-labs@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Keep MCP tool output out of context. Search it instead.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mcp-context",
+      "source": "./",
+      "description": "Indexes large MCP tool output into a searchable FTS5 knowledge base via PostToolUse hooks. No execution engine, no credentials, no network.",
+      "version": "0.1.0",
+      "author": { "name": "byliu-labs" },
+      "category": "development",
+      "keywords": ["mcp", "context-window", "fts5", "search", "indexing"]
+    }
+  ]
+}
