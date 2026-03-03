@@ -53,17 +53,27 @@ MCP tool returns 47 KB OpenAPI spec
 
 ## Install
 
-### Claude Code Plugin (recommended)
+### From the Marketplace (recommended)
 
 ```bash
-claude plugin:install /path/to/mcp-context
+/plugin marketplace add byliu-labs/mcp-context
+/plugin install mcp-context@mcp-context
 ```
 
-This registers both the MCP server and the PostToolUse hook automatically.
+Restart Claude Code after installing.
+
+### From a Local Clone
+
+```bash
+git clone https://github.com/byliu-labs/mcp-context.git
+cd mcp-context
+npm install && npm run build
+claude plugin:install .
+```
 
 ### Manual MCP Server Only
 
-Add to your Claude Code MCP config:
+Add to your Claude Code MCP config (hook not included):
 
 ```json
 {

@@ -6,13 +6,12 @@ contribution matters.
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) 20+ (LTS recommended)
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)
 
 ## Local Development Setup
 
 ```bash
 # Clone the repo
-git clone https://github.com/anthropics/mcp-context.git
+git clone https://github.com/byliu-labs/mcp-context.git
 cd mcp-context
 
 # Install dependencies
