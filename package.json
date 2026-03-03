@@ -20,7 +20,8 @@
     "test:store": "npx tsx tests/store.test.ts",
     "test:hook": "npx tsx tests/hook.test.ts",
     "test:e2e": "npx tsx tests/e2e.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "benchmark": "npx tsx tests/benchmark.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
