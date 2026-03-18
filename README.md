@@ -9,7 +9,7 @@ A Claude Code plugin that intercepts large MCP tool outputs via a PostToolUse ho
 indexes them into a local FTS5 knowledge base, and replaces the context-window payload
 with a ~200-byte summary. The full content stays searchable on demand.
 
-No execution engine. No credentials. No network calls. Just index and search.
+This plugin does not make network calls, move credentials, nor execute commands — minimal security exposure.
 
 ## How It Works
 

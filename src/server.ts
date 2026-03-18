@@ -2,7 +2,7 @@
 /**
  * MCP server for mcp-context: search, index, stats.
  *
- * No execution engine. No network. No credentials.
+ * Does not make network calls, move credentials, nor execute commands.
  * Just indexes text and serves search queries.
  */
 

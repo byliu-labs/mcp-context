@@ -1,7 +1,7 @@
 {
   "name": "mcp-context",
   "version": "0.1.0",
-  "description": "Indexes large MCP tool output into a searchable FTS5 knowledge base via PostToolUse hooks. No execution engine, no credentials, no network.",
+  "description": "Indexes large MCP tool output into a searchable FTS5 knowledge base via PostToolUse hooks. Does not make network calls, move credentials, nor execute commands.",
   "license": "MIT",
   "mcpServers": {
     "mcp-context": {
